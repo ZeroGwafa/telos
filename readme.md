@@ -32,8 +32,3 @@ https://holycoil.nl/alt1/telosApp
 - Interface scaling needs to be at 100% (this is the default).
 - It is recommended to turn timestamps on in the chat box to improve chatreader accuracy. This can be changed by ticking the box in Gameplay Settings > Chat & Social > Chat Customisation > Local timestamps in chat box.
 - The recommended interface transparency is 0%. A transparent chatbox may cause issues.
-
-## Donations
-In case you would like to facilitate my coffee addiction:
-
-<a href="https://www.buymeacoffee.com/DaStewieRS" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
