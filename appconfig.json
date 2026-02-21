@@ -1,0 +1,16 @@
+{
+	"appName": "Telos",
+	"description": "Telos tool",
+	"appUrl":"./index.html",
+	"configUrl":"./appconfig.json",
+	"iconUrl": "",
+	"defaultWidth": 200,
+	"defaultHeight": 450,
+	"minWidth": 200,
+	"minHeight": 200,
+	"maxWidth": 400,
+	"maxHeight": 500,
+	"requestHandlers": [ ],
+	"activators": [ ],
+	"permissions": "overlay,pixel,gamestate"
+}
