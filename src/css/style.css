@@ -32,7 +32,7 @@ html{
 	right:0px;
 	height:0px;
 	height:20px;
-	background: url('/nis/alt1-currentskin/background.png') #171E24;
+	background: url('https://runeapps.org/nis/alt1-currentskin/background.png') #171E24;
 	z-index:10000;
 }
 div.headerTitle {
@@ -61,7 +61,7 @@ div.headerTitle:after {
 	width:25px;
 	height:24px;
 }
-.nisbutton{height:32px; position:relative; background:url('/nis/alt1-currentskin/nisbutton.png') 0px -100% / 20px 400% repeat content-box; cursor:pointer; text-align:center; color:#000; font-family:'trajan-pro-3'; text-shadow:1px 1px 2px #ECC622; font-size:18px; margin:5px; padding:0px 12px; line-height:32px; user-select:none; -webkit-user-select:none;}
+.nisbutton{height:32px; position:relative; background:url('https://runeapps.org/nis/alt1-currentskin/nisbutton.png') 0px -100% / 20px 400% repeat content-box; cursor:pointer; text-align:center; color:#000; font-family:'trajan-pro-3'; text-shadow:1px 1px 2px #ECC622; font-size:18px; margin:5px; padding:0px 12px; line-height:32px; user-select:none; -webkit-user-select:none;}
 div.header .nisseperator {
 	bottom:0px;
 	left:0px;
@@ -96,7 +96,7 @@ div.header .nisseperator {
 	left:0px;
 	right:0px;
 	height:40px;
-	background: url('/nis/alt1-currentskin/background.png') #171E24;
+	background: url('https://runeapps.org/nis/alt1-currentskin/background.png') #171E24;
 	z-index:10000;
 }
 .footer:before {

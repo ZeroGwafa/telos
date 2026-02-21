@@ -1,9 +1,9 @@
 {
 	"appName": "Telos",
 	"description": "Telos tool",
-	"appUrl":"./",
-	"configUrl":"./appconfig.jon",
-	"iconUrl": "images/Telos_the_warden.png",
+	"appUrl":"./index.html",
+	"configUrl":"./appconfig.json",
+	"iconUrl": "",
 	"defaultWidth": 200,
 	"defaultHeight": 450,
 	"minWidth": 200,

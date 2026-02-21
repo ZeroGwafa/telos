@@ -1,3 +1,4 @@
+NOTE: Original by DaStewie.  Forked and updated with their permission
 # Telos Attack Tracker
 
 The Telos attack tracker is an Alt1 app to help you fight Telos, an end-game boss in Runescape.
@@ -21,11 +22,11 @@ The stepless timer setting allows you to switch between 0.1 second granularity (
 ## Installation
 To install Telos tracker, copy & paste this link into your browser:<br/>
 ```
-alt1://addapp/https://holycoil.nl/alt1/telosApp/appconfig.json
+alt1://addapp/https://zerogwafa.github.io/telos/appconfig.json
 ```
 
 Or go to this URL in the alt1 browser:<br/>
-https://holycoil.nl/alt1/telosApp
+https://zerogwafa.github.io/telos/
 
 ## Requirements
 - Alt1 toolkit must be installed, you can install that [here](https://runeapps.org/alt1).

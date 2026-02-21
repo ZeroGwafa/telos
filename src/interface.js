@@ -1,33 +1,33 @@
 import * as $ from "./jquery";
 
-export function setTooltips(el) {
-	$(el).tooltipster({
-		functionInit: function (instance, helper) {
-	    	if(!$(helper.origin).attr('data-tooltip-content')) return;
-	    	var crewM = $(helper.origin).attr('data-tooltip-content').split('-');
-	    	var selected = pCrew.getCrew(crewM[0], crewM[1]);
-			var frag = eldiv('tooltip_content', [
-	    		eldiv({id:'crewTooltip'}, [
-	    			eldiv('crewBody', [
-	    				eldiv('name', {tag:'span'}, [selected.name]),
-	    				eldiv('crew '+selected.type),
-	    				eldiv('level', ['Level '+selected.level]),
-	    				eldiv('stat morale', [selected.morale, eldiv({tag:'span'}, ['Morale:'])]),
-						eldiv('stat combat', [selected.combat, eldiv({tag:'span'}, ['Combat:'])]),
-						eldiv('stat seafaring', [selected.seafaring, eldiv({tag:'span'}, ['Seafaring:'])]),
-						eldiv('stat speed', [selected.speed, eldiv({tag:'span'}, ['Speed:'])]),
-						eldiv('traits', {tag:'span'}, [selected.type])
-	    			])
-	    		])
-	    	]);
-	    	$(helper.origin).append(frag)
-			var content = $(helper.origin).find('.tooltip_content').detach();
-	      	if(content.length > 0) {
-	      		instance.content(content);
-	      	}
-	    }, plugins: ["follower"]
-	});
-}
+// export function setTooltips(el) {
+// 	$(el).tooltipster({
+// 		functionInit: function (instance, helper) {
+// 	    	if(!$(helper.origin).attr('data-tooltip-content')) return;
+// 	    	var crewM = $(helper.origin).attr('data-tooltip-content').split('-');
+// 	    	var selected = pCrew.getCrew(crewM[0], crewM[1]);
+// 			var frag = eldiv('tooltip_content', [
+// 	    		eldiv({id:'crewTooltip'}, [
+// 	    			eldiv('crewBody', [
+// 	    				eldiv('name', {tag:'span'}, [selected.name]),
+// 	    				eldiv('crew '+selected.type),
+// 	    				eldiv('level', ['Level '+selected.level]),
+// 	    				eldiv('stat morale', [selected.morale, eldiv({tag:'span'}, ['Morale:'])]),
+// 						eldiv('stat combat', [selected.combat, eldiv({tag:'span'}, ['Combat:'])]),
+// 						eldiv('stat seafaring', [selected.seafaring, eldiv({tag:'span'}, ['Seafaring:'])]),
+// 						eldiv('stat speed', [selected.speed, eldiv({tag:'span'}, ['Speed:'])]),
+// 						eldiv('traits', {tag:'span'}, [selected.type])
+// 	    			])
+// 	    		])
+// 	    	]);
+// 	    	$(helper.origin).append(frag)
+// 			var content = $(helper.origin).find('.tooltip_content').detach();
+// 	      	if(content.length > 0) {
+// 	      		instance.content(content);
+// 	      	}
+// 	    }, plugins: ["follower"]
+// 	});
+// }
 
 export function telosInterface() {
 	var me = this;
@@ -92,7 +92,7 @@ export function telosInterface() {
 		if (me.settings['showFreedom'] == 1) {
 			if (me.settings['minified'] == 1) {
 				html += '<div class="crty-story" style="z-index: -1; position:relative;text-align:center">';
-				html += '	<img src="images/Freedom.webp" height="30" width="30"/>';
+				html += '	<img src="Freedom.webp" height="30" width="30"/>';
 				html += '	<span id="freedom_timer" style="font-size:16px; font-weight: bold; padding-left: 20px;">0.0s</span>';
 				html += '</div>';
 				html += '<div class="crty-story" style="z-index: -1; position:relative;">';
@@ -105,7 +105,7 @@ export function telosInterface() {
 				html += '<div class="nisseperator"></div>';
 			} else {
 				html += '<div class="crty-story" style="z-index: -1; position:relative;">';
-				html += '	<img src="images/Freedom.webp" height="30" width="30"/>';
+				html += '	<img src="Freedom.webp" height="30" width="30"/>';
 				html += '	<span id="freedom_timer" style="font-size:14px">Time until freedom: <br>0.0 seconds.</span>';
 				html += '</div>';
 				html += '<div class="crty-story" style="z-index: -1; position:relative;">';
@@ -125,7 +125,7 @@ export function telosInterface() {
 				
 			} else {
 				html += '<div class="crty-story" style="z-index: -1; position:relative;">';
-				html += '	<img src="images/Green_stream_status_icon.webp" height="30" width="30"/>';
+				html += '	<img src="Green_stream_status_icon.webp" height="30" width="30"/>';
 				html += '	<span id="beam_timer" style="font-size:14px">Time until change: <br>0.0 seconds.</span>';
 				html += '</div>';
 				html += '<div class="crty-story" style="z-index: -1; position:relative;">';
@@ -143,7 +143,7 @@ export function telosInterface() {
 				
 			} else {			
 				html += '<div class="crty-story" style="z-index: -1; position:relative;">';
-				html += '	<img src="images/Vulnerability_icon.webp" height="28" width="24"/>';
+				html += '	<img src="Vulnerability_icon.webp" height="28" width="24"/>';
 				html += '	<span id="vuln_timer" style="font-size:14px">Time until vuln wears off: <br>0.0 seconds.</span>';
 				html += '</div>';
 				html += '<div class="crty-story" style="z-index: -1; position:relative;">';
@@ -160,7 +160,7 @@ export function telosInterface() {
 		if (me.settings['showInsta'] == 1) {
 			if (me.settings['minified'] == 1) {
 				html += '<div class="crty-story" style="z-index: -1; position:relative;text-align:center">';
-				html += '	<img src="images/instakill.webp" height="30" width="30"/>';
+				html += '	<img src="instakill.webp" height="30" width="30"/>';
 				html += '	<span id="insta_timer" style="font-size:16px; font-weight: bold; padding-left: 20px;">0.0s</span>';
 				html += '</div>';
 				html += '<div class="crty-story" style="z-index: -1; position:relative;">';
@@ -173,7 +173,7 @@ export function telosInterface() {
 				html += '<div class="nisseperator"></div>';
 			} else {
 				html += '<div class="crty-story" style="z-index: -1; position:relative;">';
-				html += '	<img src="images/instakill.webp" height="30" width="30"/>';
+				html += '	<img src="instakill.webp" height="30" width="30"/>';
 				html += '	<span id="insta_timer" style="font-size:14px">Time until insta kill: <br>0.0 seconds.</span>';
 				html += '</div>';
 				html += '<div class="crty-story" style="z-index: -1; position:relative;">';
@@ -388,7 +388,7 @@ export function telosInterface() {
 			localStorage.telos_settings = JSON.stringify(me.settings);
 			console.log('value: ' + this.value);
 		});
-		setTooltips('.tooltip');
+		// setTooltips('.tooltip');
 	}
 	this.debugMenu = function() {
 		var html = '';

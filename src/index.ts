@@ -1,7 +1,7 @@
 // alt1 base libs, provides all the commonly used methods for image matching and capture
 // also gives your editor info about the window.alt1 api
-import * as A1lib from "@alt1/base";
-import * as ChatboxReader from "@alt1/chatbox";
+import * as A1lib from "alt1";
+import * as ChatboxReader from "alt1/chatbox";
 
 import { TelosReader } from "./TelosReader";
 import { _timer } from "./timer.js";
@@ -9,10 +9,16 @@ import { telosInterface } from "./interface.js";
 
 import * as $ from "./jquery";
 
-// tell webpack to add index.html and appconfig.json to output
-require("!file-loader?name=[name].[ext]!./index.html");
-require("!file-loader?name=[name].[ext]!./appconfig.json");
-
+import "./index.html";
+import "./appconfig.json";
+import "./css/nis.css";
+import "./css/style.css";
+import "./css/tooltipster.bundle.min.css";
+import "./css/tooltipster.css";
+import "./images/Freedom.webp";
+import "./images/Green_stream_status_icon.webp";
+import "./images/Vulnerability_icon.webp";
+import "./images/instakill.webp";
 
 let attack_messages = {
 	"uppercut": 	"Gielinor, give me strength",
